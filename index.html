@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapid Write</title>
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Icon -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!--FontAwesome Icon-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Topbar -->
+        <div class="topbar">
+            <div class="logo">
+                <p class="text-sec logo-text">Rapid Write</p>
+            </div>
+            <div class="right-topbar">
+                <p ><a class="home-btn" href="#index.html">Home</a></p>
+            </div>
+        </div>
+        <!-- Middle Section -->
+        <div class="mid-section">
+            <div class="timer">
+                <p class="timer-head">TIMER</p>
+                <p class="timer-count" id="timer">30</p>
+            </div>
+            <input type="text" id="input-field">
+            <div class="para" id="paragraph">
+                <p></p>
+            </div>
+
+            <button onclick="fetchRandom()" id="restartButton" class="restart-btn text-sec"> <img src="icons/arrow.png" alt=""> Restart</button>
+        </div>
+
+        <!-- Result Section -->
+        <div class="hori-line"></div>
+        <div class="resultSection">
+            <p>Mistake : <span id="mistake">0</span></p>
+            <p>WPM : <span id="wpm">0</span></p>
+            <p>CPM : <span id="cpm">0</span></p>
+
+        </div>
+ 
+        <!-- Score Modal -->
+        <div id="scoreModal" class="modal">
+           <div class="modal-content">
+            <span class="close">&times;</span>
+           <h2>Time's up!</h2>
+           <hr style="color: #bcbcbc;">
+            <p id="wpmResult">wpm: 0</p>
+            <p id="mistakeResult">Mistakes: 0</p>
+             <p id="cpmResult">CPM: 0</p>
+            </div>
+        </div>
+        <div class="hori-line" style="margin-top: 50px;"></div>
+        <!------Footer Section-->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2023 Rapid Write. All rights reserved.</p>
+                <div class="social-icons">
+                    <a href="https://github.com/mgiftson0" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:your.mgiftson00@gmail.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://instagram.com/msabali_" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://sabali-mu.vercel.app/" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-globe"></i>manuel
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+       
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
